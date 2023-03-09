@@ -34,6 +34,7 @@ while True:
     for (ex, ey, ew, eh) in eyes:
         img = cv2.rectangle(img, (ex, ey), (ex+ew, ey+eh), (255, 0, 0), 3)
         img = cv2.putText(img, "olho", (ex, ey-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (36,255,12), 2)
+        
     # # detecting smiles
     # smiles = smile_cascade.detectMultiScale(img_gray)
 
